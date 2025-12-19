@@ -3,13 +3,13 @@
  * @description Glossy, glassy theme based on a twitter design.
  * @author Blade0, Zeealeid
  * @authorId 1124341362955919371
- * @version 1.1
+ * @version 1.2
  * @updateUrl https://blade04208.github.io/shine/shine.theme.css
  * @source https://github.com/Blade04208/shine
  * @invite KEcCnVuTV7
  */
 /* This contains the actual theme, removing will remove the theme, so dont ok thank you */
- @import url(https://blade04208.github.io/shine/import.css);
+ @import url(https://blade04208.github.io/shine/src/import.css);
  
 :root {
     --shine-gap: 8px;
