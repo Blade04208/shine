@@ -548,7 +548,7 @@ a._2ea32c412048f708-link {
     /* Re-Iconify Search */
     order: 1;
 
-    ._974928fe84ca9647-searchBar {
+    .c322aadb96ff59c9-searchBar {
         /* Make the default state only show an icon that can be clicked. */
         transition: all ease 0.3s;
         width: 25px;
@@ -558,7 +558,7 @@ a._2ea32c412048f708-link {
         border: none;
         padding: 0;
 
-        ._974928fe84ca9647-icon {
+        .c322aadb96ff59c9-icon {
             height: 32px;
             width: 32px;
             scale: 1.2;
@@ -566,8 +566,8 @@ a._2ea32c412048f708-link {
         }
     }
 
-    ._974928fe84ca9647-focused ._974928fe84ca9647-searchBar,
-    ._974928fe84ca9647-open ._974928fe84ca9647-searchBar {
+    .c322aadb96ff59c9-focused .c322aadb96ff59c9-searchBar,
+    .c322aadb96ff59c9-open .c322aadb96ff59c9-searchBar {
         /* Expand the search bar when focused, and keep it expanded when text is entered. These classes make it really easy, thanks discord! */
         width: 225px;
         box-sizing: border-box;
@@ -576,7 +576,7 @@ a._2ea32c412048f708-link {
         border: 1px solid var(--input-border);
         padding: 2px 0;
 
-        ._974928fe84ca9647-icon {
+        .c322aadb96ff59c9-icon {
             height: 24px;
             width: 24px;
             scale: 1;
@@ -729,7 +729,7 @@ a._2ea32c412048f708-link {
     width: calc(100% - 340px);
 }
 
-.f75fb00fb7356cbe-chat:has(.f75fb00fb7356cbe-content .a9e7064fdee8e9b0-searchResultsWrap)
+.f75fb00fb7356cbe-chat:has(.f75fb00fb7356cbe-content .a98f3b020416ad54-searchResultsWrap)
     .f75fb00fb7356cbe-subtitleContainer {
     width: calc(100% - 418px);
 }
