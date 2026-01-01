@@ -1222,3 +1222,42 @@ div:has(> .f369dba7416c67f0-headerRow) {
         gap: 15px;
     }
 }
+
+#vc-spotify-player {
+    position: relative !important;
+    background: transparent;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: calc(100%);
+        height: 100%;
+        top: 0px;
+        background: var(--vc-spotify-track-image);
+        background-position: center;
+        filter: blur(60px) saturate(2);
+        z-index: -1;
+        left: 0px;
+        opacity: 0.5;
+    }
+}
+
+
+.a562c840daab72a7-bar>.a562c840daab72a7-barFill {
+    overflow: hidden;
+    contain: strict;
+    background: var(--vc-spotify-track-image);
+    background-position: center;
+    filter: saturate(3);
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        top: -100%;
+
+        backdrop-filter: blur(20px);
+        z-index: 1;
+    }
+}
