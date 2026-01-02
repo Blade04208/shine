@@ -1261,3 +1261,102 @@ div:has(> .f369dba7416c67f0-headerRow) {
         z-index: 1;
     }
 }
+
+/* vc Channeltabs (god bless anchor) */
+
+._960e4207cea8323e-baseLayer {
+    anchor-scope: --trailing;
+
+    .c38106a3f0c3ca76-trailing {
+        position: relative;
+        z-index: 101;
+        anchor-name: --trailing;
+    }
+
+    .vc-channeltabs-container {
+        z-index: 200;
+        pointer-events: all;
+        -webkit-app-region: no-drag;
+        position: absolute;
+        left: var(--custom-guild-list-width);
+        top: calc(var(--custom-app-top-bar-height) / 2 + var(--space-xxs));
+        /* padding: 0px; */
+        box-sizing: border-box;
+        /* width: 100%; */
+        right: calc(anchor-size(--trailing width) + var(--space-xs, 0));
+    }
+
+    &:has(.vc-channeltabs-container) .c38106a3f0c3ca76-bar {
+        -webkit-app-region: no-drag;
+
+        .c38106a3f0c3ca76-title {
+            display: none;
+        }
+
+        .c38106a3f0c3ca76-leading {
+            width: var(--custom-guild-list-width);
+            height: 100%;
+            -webkit-app-region: drag;
+        }
+    }
+
+    .vc-channeltabs-tab {
+        padding: 0px var(--space-xxs);
+        box-shadow:
+            0 -0.5px 1px 0 rgba(255, 255, 255, 0.15) inset,
+            0 0.5px 1px 0 rgba(255, 255, 255, 0.3) inset,
+            0 1px 2px 0 rgba(255, 255, 255, 0.2) inset !important;
+        background: rgba(255, 255, 255, 0.04);
+        background-blend-mode: plus-lighter;
+        border-radius: 13px;
+        border: 0 !important;
+        height: calc(var(--custom-app-top-bar-height) - var(--space-sm));
+
+        &:hover {
+            .vc-channeltabs-tab-resize-handle {
+                background: color-mix(in srgb, var(--brand-300), transparent 75%);
+                opacity: 1 !important;
+            }
+        }
+
+        .vc-channeltabs-tab-inner {
+            padding: 0px !important;
+        }
+
+        &.vc-channeltabs-tab-compact {
+            min-width: 0px !important;
+
+            &:hover .vc-channeltabs-tab-inner {
+                padding-right: 28px !important;
+            }
+        }
+    }
+
+    .vc-channeltabs-new-button {
+        padding: 0px var(--space-xxs);
+        box-shadow:
+            0 -0.5px 1px 0 rgba(255, 255, 255, 0.15) inset,
+            0 0.5px 1px 0 rgba(255, 255, 255, 0.3) inset,
+            0 1px 2px 0 rgba(255, 255, 255, 0.2) inset !important;
+        background: rgba(255, 255, 255, 0.04);
+        background-blend-mode: plus-lighter;
+        border-radius: 13px;
+        border: 0 !important;
+        height: calc(var(--custom-app-top-bar-height) - var(--space-sm));
+    }
+
+    .vc-channeltabs-tab-selected {
+        background: var(--brand-500);
+        color: white;
+    }
+
+    .vc-channeltabs-tab-resize-handle {
+        border-radius: 4px;
+        backdrop-filter: blur(1px);
+        background: color-mix(in srgb, var(--brand-300), transparent);
+
+        &:hover {
+            background: var(--brand-300) !important;
+        }
+    }
+}
