@@ -22,6 +22,12 @@
     initial-value: true;
 }
 
+@property --shine-indicator {
+    syntax: "true | false ";
+    inherits: true;
+    initial-value: true;
+}
+
 @container style(--shine-base: default) {
     #app-mount {
         --custom-theme-base-color: #201b35;
@@ -287,18 +293,6 @@ div[style="height: 84px;"][aria-hidden="true"] {
         z-index: 0;
         mask-image: linear-gradient(to top, black 20px, transparent);
         pointer-events: none;
-    }
-
-    &:not(:has(.typing_b88801))::before {
-        content: "no one is typing :(";
-        font-size: 14px;
-        color: var(--interactive-normal);
-        height: 14px;
-        left: 24px;
-        bottom: 5px;
-        z-index: 10;
-        opacity: 0.5;
-        font-weight: 500;
     }
 }
 
@@ -704,6 +698,19 @@ a.link__2ea32 {
     flex: 0;
     justify-self: center;
 }
+@container style(--shine-indicator: true) {
+    .form_f75fb0:not(:has(.typing_b88801))::before {
+        content: "no one is typing :(";
+        font-size: 14px;
+        color: var(--text-strong);
+        height: 14px;
+        left: 24px;
+        bottom: 5px;
+        z-index: 10;
+        opacity: 0.5;
+        font-weight: 500;
+    }
+}
 
 .jumpToPresentBar__0f481 {
     position: absolute;
@@ -718,7 +725,7 @@ a.link__2ea32 {
     width: fit-content;
     flex: 0;
     justify-self: center;
-
+    top: unset;
     .barButtonMain__0f481 {
         min-width: fit-content;
         flex: 0;

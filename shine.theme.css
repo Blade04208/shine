@@ -9,8 +9,8 @@
  * @invite KEcCnVuTV7
  */
 /* This contains the actual theme, removing will remove the theme, so dont ok thank you */
- @import url(https://blade04208.github.io/shine/src/import.css);
- 
+@import url(https://blade04208.github.io/shine/src/import.css);
+
 :root {
     --shine-gap: 8px;
     /* gap between edge of app and chat content, accepts: any size  default: 8px */
@@ -20,4 +20,6 @@
     /* base color of non-nitro themes, accepts: any color  default: default */
     --shine-fog: true;
     /* Controls "prog-blur"/fog on surfaces like behind chatbox, set to false if causing visual bugs, accepts: true | false | no-threads, default: true */
+    --shine-indicator: true;
+    /*Controls the "No one is typing" indicator, accepts: true | false, default: true */
 }

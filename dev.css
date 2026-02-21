@@ -1,3 +1,6 @@
 /* DEV VERSION FOR TESTING */
 
 @import url(./src/import.css);
+:root {
+    --shine-indicator: true;
+}
