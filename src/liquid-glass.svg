@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <filter id="liquid-glass" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB">
+    <feImage xlink:href="liquid-glass-map.svg" preserveAspectRatio="none" result="map" />
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="-39" xChannelSelector="B" yChannelSelector="G" />
+    <feColorMatrix values="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" result="red" />
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="-40" xChannelSelector="B" yChannelSelector="G" />
+    <feColorMatrix values="0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0" result="green" />
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="-41" xChannelSelector="B" yChannelSelector="G" />
+    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0" result="blue" />
+    <feBlend in="blue" in2="green" mode="screen" />
+    <feBlend in2="red" mode="screen" />
+    <feOffset dx="0.0784313725490196" dy="0.0784313725490196" />
+  </filter>
+</svg>

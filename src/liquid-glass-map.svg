@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  <defs>
+    <linearGradient id="x">
+      <stop stop-color="#000" />
+      <stop offset="1" stop-color="#00f" />
+    </linearGradient>
+    <linearGradient id="y" x2="0" y2="1">
+      <stop stop-color="#000" />
+      <stop offset="1" stop-color="#0f0" />
+    </linearGradient>
+    <clipPath id="outline">
+      <rect width="100%" height="100%" rx="26" />
+    </clipPath>
+    <filter id="soften" x="-50%" y="-100%" width="200%" height="300%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#808080" />
+  <g clip-path="url(#outline)">
+    <rect width="100%" height="100%" fill="url(#x)" />
+    <rect width="100%" height="100%" fill="url(#y)" style="mix-blend-mode:screen" />
+    <rect x="12" y="12" rx="14" style="width:calc(100% - 24px);height:calc(100% - 24px)" fill="#808080" filter="url(#soften)" />
+  </g>
+</svg>

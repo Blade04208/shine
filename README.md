@@ -38,6 +38,17 @@ npm start
 ```
 add `http://localhost:5050/dev.css` to your quickcss or theme links and it should work! probably
 
+### liquid glass
+the labeled liquid glass settings in import.css require you to remake the liquid glass filter, just modify them and do a
+```sh
+python3 scripts/build-liquid-glass.py
+```
+and you should be good
+
 # Contributing
 
 you can contribute to either fix bugs, make faster, or make it closer-looking to the original twitpost
+
+# Credits
+
+Lyra Rebane - liqud glass svg

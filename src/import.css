@@ -40,7 +40,6 @@
     .form_f75fb0::after,
     .chat_f75fb0::after,
     .container__133bf::after,
-    .subtitleContainer_f75fb0::before,
     .subtitleContainer_f75fb0::after {
         display: none !important;
     }
@@ -49,14 +48,14 @@
     .form_f75fb0,
     .container__133bf {
         background: linear-gradient(to bottom,
-                    transparent,
-                    var(--background-base-lowest)) !important;
+                transparent,
+                var(--background-base-lowest)) !important;
     }
 
     .subtitleContainer_f75fb0 {
         background: linear-gradient(to top,
-                    transparent,
-                    var(--background-base-lowest)) !important;
+                transparent,
+                var(--background-base-lowest)) !important;
     }
 }
 
@@ -67,7 +66,6 @@
         .form_f75fb0::after,
         .chat_f75fb0::after,
         .container__133bf::after,
-        .subtitleContainer_f75fb0::before,
         .subtitleContainer_f75fb0::after {
             display: none !important;
         }
@@ -76,14 +74,14 @@
         .form_f75fb0,
         .container__133bf {
             background: linear-gradient(to bottom,
-                        transparent,
-                        var(--background-base-lowest)) !important;
+                    transparent,
+                    var(--background-base-lowest)) !important;
         }
 
         .subtitleContainer_f75fb0 {
             background: linear-gradient(to top,
-                        transparent,
-                        var(--background-base-lowest)) !important;
+                    transparent,
+                    var(--background-base-lowest)) !important;
         }
     }
 }
@@ -93,6 +91,25 @@
     --shine-radius: 12px;
     --shine-base: default;
     --shine-fog: no-threads;
+    /* glass controls */
+    --shine-glass-width: 100%;
+    --shine-glass-height: auto;
+    --shine-glass-darkness-opacity: 0;
+    --shine-glass-darkness-blur: 5px;
+    --shine-glass-lightness-opacity: 0.3;
+    --shine-glass-lightness-blur: 1px;
+    --shine-glass-pre-blur: 1px;
+    --shine-glass-post-blur: 2px;
+    --shine-glass-tint: 0.04;
+    /* do not modify these, they will have no effect, this is only for the script to make the svg */
+    --shine-glass-radius: 26px;
+    --shine-glass-distortion: 20;
+    --shine-glass-center-distortion: 0;
+    --shine-glass-center-size: 16;
+    --shine-glass-iridescence: 10;
+    --shine-glass-rim-width: 12px;
+    /* the svg */
+    --liquid-glass-filter: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cfilter%20id%3D%22liquid-glass%22%20filterUnits%3D%22objectBoundingBox%22%20primitiveUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%221%22%20height%3D%221%22%20color-interpolation-filters%3D%22sRGB%22%3E%3CfeImage%20xlink%3Ahref%3D%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%2520width%253D%2522100%2525%2522%2520height%253D%2522100%2525%2522%253E%253Cdefs%253E%253ClinearGradient%2520id%253D%2522x%2522%253E%253Cstop%2520stop-color%253D%2522%2523000%2522%2520%252F%253E%253Cstop%2520offset%253D%25221%2522%2520stop-color%253D%2522%252300f%2522%2520%252F%253E%253C%252FlinearGradient%253E%253ClinearGradient%2520id%253D%2522y%2522%2520x2%253D%25220%2522%2520y2%253D%25221%2522%253E%253Cstop%2520stop-color%253D%2522%2523000%2522%2520%252F%253E%253Cstop%2520offset%253D%25221%2522%2520stop-color%253D%2522%25230f0%2522%2520%252F%253E%253C%252FlinearGradient%253E%253CclipPath%2520id%253D%2522outline%2522%253E%253Crect%2520width%253D%2522100%2525%2522%2520height%253D%2522100%2525%2522%2520rx%253D%252226%2522%2520%252F%253E%253C%252FclipPath%253E%253Cfilter%2520id%253D%2522soften%2522%2520x%253D%2522-50%2525%2522%2520y%253D%2522-100%2525%2522%2520width%253D%2522200%2525%2522%2520height%253D%2522300%2525%2522%253E%253CfeGaussianBlur%2520stdDeviation%253D%25224%2522%2520%252F%253E%253C%252Ffilter%253E%253C%252Fdefs%253E%253Crect%2520width%253D%2522100%2525%2522%2520height%253D%2522100%2525%2522%2520fill%253D%2522%2523808080%2522%2520%252F%253E%253Cg%2520clip-path%253D%2522url%2528%2523outline%2529%2522%253E%253Crect%2520width%253D%2522100%2525%2522%2520height%253D%2522100%2525%2522%2520fill%253D%2522url%2528%2523x%2529%2522%2520%252F%253E%253Crect%2520width%253D%2522100%2525%2522%2520height%253D%2522100%2525%2522%2520fill%253D%2522url%2528%2523y%2529%2522%2520style%253D%2522mix-blend-mode%253Ascreen%2522%2520%252F%253E%253Crect%2520x%253D%252212%2522%2520y%253D%252212%2522%2520rx%253D%252214%2522%2520style%253D%2522width%253Acalc%2528100%2525%2520-%252024px%2529%253Bheight%253Acalc%2528100%2525%2520-%252024px%2529%2522%2520fill%253D%2522%2523808080%2522%2520filter%253D%2522url%2528%2523soften%2529%2522%2520fill-opacity%253D%25221%2522%2520%252F%253E%253C%252Fg%253E%253C%252Fsvg%253E%22%20preserveAspectRatio%3D%22none%22%20result%3D%22map%22%20%2F%3E%3CfeDisplacementMap%20in%3D%22SourceGraphic%22%20in2%3D%22map%22%20scale%3D%22-19%22%20xChannelSelector%3D%22B%22%20yChannelSelector%3D%22G%22%20%2F%3E%3CfeColorMatrix%20values%3D%221%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20result%3D%22red%22%20%2F%3E%3CfeDisplacementMap%20in%3D%22SourceGraphic%22%20in2%3D%22map%22%20scale%3D%22-20%22%20xChannelSelector%3D%22B%22%20yChannelSelector%3D%22G%22%20%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%200%200%201%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20result%3D%22green%22%20%2F%3E%3CfeDisplacementMap%20in%3D%22SourceGraphic%22%20in2%3D%22map%22%20scale%3D%22-21%22%20xChannelSelector%3D%22B%22%20yChannelSelector%3D%22G%22%20%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%201%200%200%200%200%200%201%200%22%20result%3D%22blue%22%20%2F%3E%3CfeBlend%20in%3D%22blue%22%20in2%3D%22green%22%20mode%3D%22screen%22%20%2F%3E%3CfeBlend%20in2%3D%22red%22%20mode%3D%22screen%22%20%2F%3E%3CfeOffset%20dx%3D%220.0392156862745%22%20dy%3D%220.0392156862745%22%20%2F%3E%3C%2Ffilter%3E%3C%2Fsvg%3E#liquid-glass");
 }
 
 .animatedBannerHoverLayer_f37cb1,
@@ -114,8 +131,8 @@ div[style="height: 84px;"][aria-hidden="true"] {
     /* this is to basically trick every variable at once to follow styles becuase who's got time to style alldat */
     --custom-theme-base-color-amount: 100%;
     --custom-theme-text-color: color-mix(in oklab,
-                var(--custom-theme-base-color),
-                white 85%);
+            var(--custom-theme-base-color),
+            white 85%);
     --custom-theme-text-color-amount: 100%;
 }
 
@@ -124,8 +141,8 @@ div[style="height: 84px;"][aria-hidden="true"] {
     /* this is to basically trick every variable at once to follow styles becuase who's got time to style alldat */
     --custom-theme-base-color-amount: 100%;
     --custom-theme-text-color: color-mix(in oklab,
-                var(--custom-theme-base-color),
-                rgb(0, 0, 0) 85%);
+            var(--custom-theme-base-color),
+            rgb(0, 0, 0) 85%);
     --custom-theme-text-color-amount: 100%;
 }
 
@@ -176,12 +193,9 @@ div[style="height: 84px;"][aria-hidden="true"] {
 }
 
 .sidebarList__5e434 {
-    background: color-mix(in oklab,
-                var(--background-surface-high),
-                transparent 90%);
+    background: color-mix(var(--background-base-low), white 5%);
     margin-bottom: var(--shine-gap, 0px) !important;
     border-radius: var(--shine-radius) 0px 0px var(--shine-radius);
-    backdrop-filter: blur(35px) saturate(50%) brightness(122.5%);
     box-shadow:
         0 0 0 1px rgba(0, 0, 0, 0.32),
         0 1.5px 2px 0 rgba(255, 255, 255, 0.1) inset,
@@ -195,7 +209,7 @@ div[style="height: 84px;"][aria-hidden="true"] {
     >div {
         border-radius: 0px var(--shine-radius) var(--shine-radius) 0px;
         overflow: hidden;
-        background: rgba(255, 255, 255, 0.05);
+        background: rgba(255, 255, 255, 0.025);
         box-shadow:
             0 0 0 1px rgba(0, 0, 0, 0.32),
             0 1.5px 2px 0 rgba(255, 255, 255, 0.1) inset,
@@ -208,7 +222,7 @@ div[style="height: 84px;"][aria-hidden="true"] {
         display: none;
     }
 
-                                                                .winButtonMinMax_c38106>svg>rect {
+    .winButtonMinMax_c38106>svg>rect {
         rx: 1.5px;
         ry: 1.5px;
     }
@@ -233,20 +247,27 @@ div[style="height: 84px;"][aria-hidden="true"] {
 }
 
 .channelTextArea_f75fb0 {
-    border-radius: 26px;
-    background: rgba(255, 255, 255, 0.04);
+    width: var(--shine-glass-width);
+    max-width: 100%;
+    min-height: var(--shine-glass-height);
+    border-radius: var(--shine-glass-radius);
+    background: rgb(255 255 255 / var(--shine-glass-tint));
     background-blend-mode: plus-lighter;
     box-shadow:
-        0 -0.5px 1px 0 rgba(255, 255, 255, 0.15) inset,
-        0 0.5px 1px 0 rgba(255, 255, 255, 0.3) inset,
-        0 1px 2px 0 rgba(255, 255, 255, 0.2) inset,
+        0 -0.5px var(--shine-glass-lightness-blur) 0 rgb(255 255 255 / calc(var(--shine-glass-lightness-opacity) * 0.5)) inset,
+        0 0.5px var(--shine-glass-lightness-blur) 0 rgb(255 255 255 / var(--shine-glass-lightness-opacity)) inset,
+        0 1px calc(var(--shine-glass-lightness-blur) * 2) 0 rgb(255 255 255 / calc(var(--shine-glass-lightness-opacity) * 2 / 3)) inset,
+        0 0 var(--shine-glass-darkness-blur) 0 rgb(0 0 0 / var(--shine-glass-darkness-opacity)) inset,
         0 2px 12px 0 rgba(0, 0, 0, 0.2) !important;
-    backdrop-filter: blur(8px) brightness(115%) saturate(150%) sepia(20%);
     border: 0px !important;
 }
 
+.channelTextArea_f75fb0>.scrollableContainer__74017 {
+    min-height: var(--shine-glass-height);
+}
+
 .themedBackground__74017 {
-    border-radius: 26px;
+    border-radius: var(--shine-glass-radius);
     background: transparent !important;
 
     &::-webkit-scrollbar {
@@ -263,44 +284,53 @@ div[style="height: 84px;"][aria-hidden="true"] {
 .form_f75fb0 {
     /* left: -8px; */
     padding: 0px 12px;
+    margin-top: -80px;
+    overflow: visible;
+    display: flex;
+    align-items: end;
+    justify-items: end;
 
     &::after {
         display: block;
         content: "";
         position: absolute;
         background: color-mix(in oklab,
-                    var(--background-base-lowest),
-                    transparent 50%);
+                var(--background-base-lowest),
+                transparent 50%);
         left: 0px;
         bottom: 0px;
         width: 100%;
-        height: 150%;
+        height: 64px;
         backdrop-filter: blur(8px);
         z-index: 0;
         mask-image: linear-gradient(to top, black 20px, transparent);
         pointer-events: none;
     }
+
+    >div {
+        z-index: 1;
+        width: 100%;
+    }
+}
+
+.messagesWrapper__36d07 {
+    >.scroller__36d07 .scrollerInner__36d07 {
+        margin-bottom: 80px;
+    }
+
+    .chatGradient__36d07 {
+        display: none;
+    }
+
+    mask-image: linear-gradient(to top, transparent, black 40px);
 }
 
 .channelBottomBarArea_f75fb0 {
-    position: relative;
     z-index: 200;
 }
 
 .typing_b88801 {
-    z-index: 200;
-}
-
-.messagesWrapper__36d07 {
-    position: absolute;
-    width: 100%;
-    height: 100% !important;
-    padding-bottom: 87px;
-    box-sizing: border-box;
-
-    .scroller__36d07 {
-        padding-bottom: 87px;
-    }
+    z-index: 1;
 }
 
 .container_aa63ab>.buttonContainer_aa63ab>.button_aa63ab {
@@ -310,7 +340,7 @@ div[style="height: 84px;"][aria-hidden="true"] {
     background: rgba(255, 255, 255, 0);
     background-image: url(https://blade04208.github.io/shine/src/marble.png) !important;
     background-size: 100%;
-    transition: all 0.1s ease;
+    transition: scale 0.1s ease, filter 0.1s ease, background-color 0.1s ease;
 
     &:not(.disabled__24af7) {
         border-radius: 99px;
@@ -318,7 +348,6 @@ div[style="height: 84px;"][aria-hidden="true"] {
         background-image: url(https://blade04208.github.io/shine/src/marble-active.png) !important;
         background-size: 100%;
         box-shadow: 0px 0px 50px var(--brand-500);
-        transition: all 0.1s ease;
 
         &:hover {
             filter: brightness(110%);
@@ -370,30 +399,14 @@ div[style="height: 84px;"][aria-hidden="true"] {
     }
 }
 
-.chat_f75fb0::after,
-.container__133bf::after {
-    position: fixed;
-    content: "";
-    width: calc(var(--custom-guild-sidebar-width));
-    height: calc(100vh - var(--custom-app-top-bar-height) - var(--shine-gap, 0px));
-    left: var(--custom-guild-list-width);
-    background: transparent;
-    backdrop-filter: blur(25px) saturate(150%) brightness(125%);
-    mask-image: linear-gradient(to left, transparent 70px, black 70px);
-    z-index: 5;
-    pointer-events: none;
-    box-sizing: border-box;
-    border-right: var(--custom-guild-list-width) solid rgba(255, 255, 255, 0.1);
-}
-
 .chat_f75fb0 {
     overflow: visible;
     contain: none !important;
     z-index: 50;
     margin-left: 2px;
     background: color-mix(in srgb,
-                var(--custom-theme-text-color),
-                transparent 97%);
+            var(--custom-theme-text-color),
+            transparent 97%);
     border-top-right-radius: var(--shine-radius);
 }
 
@@ -431,7 +444,7 @@ div[style="height: 84px;"][aria-hidden="true"] {
     border-radius: 999px;
     overflow: hidden;
     gap: 0px;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.02);
     /* box-shadow: 0 -1.5px 0.4px -1px rgba(255, 255, 255, 0.15) inset, 0 1.5px 0.75px -1px rgba(255, 255, 255, 0.30) inset; */
     box-shadow:
         0 -2px 0.75px -1px rgba(255, 255, 255, 0.15) inset,
@@ -440,7 +453,6 @@ div[style="height: 84px;"][aria-hidden="true"] {
 
     .button__67645 {
         background: rgba(255, 255, 255, 0);
-        background: rgba(255, 255, 255, 0.06);
         box-shadow:
             0 -2px 0.75px -1px rgba(255, 255, 255, 0.15) inset,
             0 1.5px 0.75px -1px rgba(255, 255, 255, 0.3) inset;
@@ -456,10 +468,10 @@ div[style="height: 84px;"][aria-hidden="true"] {
             background: rgba(255, 255, 255, 0.1);
         }
 
-                                                                                                                                &.redGlow__67645>.contents__201d5>.lottieIcon__5eb9b {
-                                                                                                                                    --__lottieIconColor: color-mix(in oklab,
-                                                                                                                                            var(--status-danger),
-                                                                                                                                            white 25%) !important;
+        &.redGlow__67645>.contents__201d5>.lottieIcon__5eb9b {
+            --__lottieIconColor: color-mix(in oklab,
+                    var(--status-danger),
+                    white 25%) !important;
         }
     }
 }
@@ -512,8 +524,8 @@ a.link__2ea32 {
 .modeSelected__2ea32>div>.link__2ea32 {
     border-radius: 99px;
     background: color-mix(in oklab,
-                var(--custom-theme-base-color),
-                rgba(255, 255, 255, 0.18));
+            var(--custom-theme-base-color),
+            rgba(255, 255, 255, 0.18));
     background-blend-mode: overlay;
 }
 
@@ -523,8 +535,7 @@ a.link__2ea32 {
     width: auto !important;
 
     .searchBar_c322aa {
-        /* Make the default state only show an icon that can be clicked. */
-        transition: all ease 0.3s;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
         width: 25px;
         box-sizing: unset;
         cursor: pointer;
@@ -535,9 +546,9 @@ a.link__2ea32 {
         .icon_c322aa {
             height: 32px;
             width: 32px;
-            scale: 1.2;
+            scale: 0.85;
             cursor: pointer;
-            transform: translateX(-7px);
+            transform: translateX(-22px);
         }
     }
 
@@ -570,7 +581,6 @@ a.link__2ea32 {
         0 1.5px 0.75px -1px rgba(255, 255, 255, 0.3) inset,
         0 2px 12px 0 rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(8px);
-    transition: all 0.3s;
 }
 
 .subtitleContainer_f75fb0 {
@@ -583,24 +593,8 @@ a.link__2ea32 {
         content: "";
         position: absolute;
         background: color-mix(in oklab,
-                    var(--background-surface-high),
-                    transparent 75%);
-        top: 0px;
-        width: 100%;
-        height: 150%;
-        backdrop-filter: blur(18px);
-        mask-image: linear-gradient(to top, transparent 0%, black 100%);
-        z-index: 0;
-        pointer-events: none;
-    }
-
-    &::before {
-        display: block;
-        content: "";
-        position: absolute;
-        background: color-mix(in oklab,
-                    var(--background-surface-high),
-                    transparent 98.25%);
+                var(--background-surface-high),
+                transparent 75%);
         top: 0px;
         width: 100%;
         height: 150%;
@@ -754,7 +748,7 @@ a.link__2ea32 {
         background-color: rgba(255, 255, 255, 0) !important;
         background-image: url(https://blade04208.github.io/shine/src/marble.png) !important;
         background-size: 100%;
-        transition: all 0.1s ease;
+        transition: background-color 0.1s ease;
     }
 
     &.selected__6e9f8 .childWrapper__6e9f8 {
@@ -763,7 +757,6 @@ a.link__2ea32 {
         background-image: url(https://blade04208.github.io/shine/src/marble-active.png) !important;
         background-size: 100%;
         box-shadow: 0px 0px 50px var(--brand-500);
-        transition: all 0.1s ease;
     }
 }
 
@@ -816,49 +809,8 @@ a.link__2ea32 {
     background: var(--background-surface-highest);
 }
 
-.header_f37cb1 {
-    height: auto;
-    /* max-height: 112px; */
-}
-
-.headerContent_f37cb1 {
-    display: flex;
-    justify-content: start;
-    align-content: end;
-    align-items: end;
-    gap: 16px;
-
-    .name_f37cb1 {
-        font-size: 28px;
-        order: 0;
-        margin-right: 0px;
-        flex: 0 1 auto;
-        display: inline;
-        width: min-content;
-        max-width: 100%;
-    }
-
-    .guildIconV2Container__85d16 {
-        display: inline-flex;
-        order: 1;
-        height: 32px;
-        align-items: center;
-
-        >div {
-            scale: 1.555555556;
-        }
-    }
-
-    .headerChildren_f37cb1 {
-        order: 2;
-        margin-left: auto;
-        display: flex;
-        min-height: 100%;
-        align-self: center;
-    }
-}
-
 .container_eff079 {
+    /*TODO: fix this with the moden boostbar */
     flex-direction: column-reverse;
 
     .progressBar_eff079::after {
@@ -886,8 +838,8 @@ a.link__2ea32 {
             font-weight: 600;
             font-size: 13px;
             color: color-mix(in oklab,
-                        var(--custom-theme-base-color),
-                        white 35%);
+                    var(--custom-theme-base-color),
+                    white 35%);
         }
     }
 
@@ -919,8 +871,8 @@ a.link__2ea32 {
         0 0.5px 1px 0 rgba(255, 255, 255, 0.3) inset,
         0 1px 2px 0 rgba(255, 255, 255, 0.2) inset,
         0 2px 12px 0 rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4px);
     overflow: hidden;
+    contain: paint;
     border-left-width: 3px;
 
     &::before {
@@ -945,8 +897,8 @@ a.link__2ea32 {
 
 .withAccentColor__60fa3 {
     background: color-mix(in srgb,
-                var(--background-surface-high),
-                var(--__accent-color) 10%);
+            var(--background-surface-high),
+            var(--__accent-color) 10%);
 }
 
 div:has(> .headerRow_f369db) {
@@ -1000,8 +952,8 @@ div:has(> .headerRow_f369db) {
 .user-profile-popout,
 .profile__9c3be {
     background: color-mix(in oklab,
-                var(--background-surface-highest),
-                white 7.5%) !important;
+            var(--background-surface-highest),
+            white 7.5%) !important;
     box-shadow:
         0 1.5px 1px 0 rgba(255, 255, 255, 0.1) inset,
         0 8px 40px 0 rgba(255, 255, 255, 0.05) inset,
@@ -1023,7 +975,7 @@ div:has(> .headerRow_f369db) {
         0 1.5px 0.75px -1px rgba(255, 255, 255, 0.3) inset,
         0 2px 12px 0 rgba(0, 0, 0, 0.2) !important;
     backdrop-filter: blur(8px);
-    transition: all 0.5s ease;
+    transition: filter 0.5s ease, background-color 0.5s ease;
 
     svg {
         filter: drop-shadow(0px 2px 4px black);
@@ -1101,7 +1053,7 @@ div:has(> .headerRow_f369db) {
 .button__201d5:not(.button__67645,
     .volumeButton__2d263,
     .videoButton_cf09d8,
-                                                                .banner_fb7f94),
+    .banner_fb7f94),
 .item__133bf {
     box-shadow:
         0 -0.5px 1px 0 rgba(255, 255, 255, 0.15) inset,
@@ -1115,20 +1067,20 @@ div:has(> .headerRow_f369db) {
     &.colorBrand__201d5,
     &.addFriend__133bf {
         background: color-mix(in srgb,
-                    var(--control-background-primary-default),
-                    transparent 20%) !important;
+                var(--control-background-primary-default),
+                transparent 20%) !important;
     }
 
     &.critical-secondary_a22cb0 {
         background: color-mix(in srgb,
-                    var(--control-background-critical-primary-default),
-                    transparent 90%);
+                var(--control-background-critical-primary-default),
+                transparent 90%);
     }
 
     &.critical-primary_a22cb0 {
         background: color-mix(in srgb,
-                    var(--control-background-critical-primary-default),
-                    transparent 20%);
+                var(--control-background-critical-primary-default),
+                transparent 20%);
     }
 
     &:hover {
@@ -1154,8 +1106,8 @@ div:has(> .headerRow_f369db) {
 .container__9497c,
 .container__8a031 {
     background: color-mix(in oklab,
-                var(--background-surface-highest),
-                white 5%) !important;
+            var(--background-surface-highest),
+            white 5%) !important;
     box-shadow:
         0 1.5px 1px 0 rgba(255, 255, 255, 0.1) inset,
         0 8px 40px 0 rgba(255, 255, 255, 0.05) inset,
@@ -1327,8 +1279,8 @@ div:has(> .headerRow_f369db) {
         &:hover {
             .vc-channeltabs-tab-resize-handle {
                 background: color-mix(in srgb,
-                            var(--brand-300),
-                            transparent 75%);
+                        var(--brand-300),
+                        transparent 75%);
                 opacity: 1 !important;
             }
         }
@@ -1373,4 +1325,17 @@ div:has(> .headerRow_f369db) {
             background: var(--brand-300) !important;
         }
     }
+}
+
+.channelTextArea_f75fb0,
+.toolbar__9293f,
+.buttons__37e49,
+.newMessagesBar__0f481,
+.bannerButton_fb7f94,
+.jumpToPresentBar__0f481 {
+    backdrop-filter: blur(var(--shine-glass-pre-blur)) var(--liquid-glass-filter) blur(var(--shine-glass-post-blur));
+}
+
+.newMessagesBar__0f481 {
+    background: color-mix(in oklab, var(--brand-500), transparent 25%);
 }
